@@ -13,6 +13,12 @@ function pro_101_custom_node_view_alter(&$build) {
   }
 }
 
+function pro_101_custom_form_alter(&$form, &$form_state, $form_id) {
+  // if ($form_id == 'user-login') {
+  //   $form['category_name']['profile_fieldname']['#attributes']['autocomplete'] = 'off';
+  // }
+}
+
 /**
 * Your module will use the subject as the main title and load the content from your function
 */
