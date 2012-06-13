@@ -14,9 +14,9 @@ function pro_101_custom_node_view_alter(&$build) {
 }
 
 function pro_101_custom_form_alter(&$form, &$form_state, $form_id) {
-  // if ($form_id == 'user-login') {
-  //   $form['category_name']['profile_fieldname']['#attributes']['autocomplete'] = 'off';
-  // }
+  if ($form_id == 'user-login') {
+    $form['pass']['#attributes']['autocomplete'] = 'off';
+  }
 }
 
 /**
