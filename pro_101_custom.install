@@ -1,0 +1,7 @@
+<?php
+
+
+function pro_101_custom_install() {
+  $path = array('source'=>"faq-page", 'alias'=>"answers");
+  path_save($path);
+}
