@@ -2,6 +2,11 @@
 
 
 function pro_101_custom_install() {
-  $path = array('source'=>"faq-page", 'alias'=>"answers");
+  // Create a language-neutral alias.
+  $path = array(
+    'source' => "faq-page",
+    'alias' => 'answers',
+  );
+  $path_original = $path;
   path_save($path);
 }
