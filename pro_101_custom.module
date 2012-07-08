@@ -4,14 +4,14 @@
 */
 
 //Implements hook_node_view_alter()
-function pro_101_custom_node_view_alter(&$build) {
-  if(isset($build['#node'])) {
-    $node = $build['#node'];
-    if(!empty($node->nid)) {
-      $build['#contextual_links']['node'] = array('node', array($node->nid));
-    }
-  }
-}
+// function pro_101_custom_node_view_alter(&$build) {
+//   if(isset($build['#node'])) {
+//     $node = $build['#node'];
+//     if(!empty($node->nid)) {
+//       $build['#contextual_links']['node'] = array('node', array($node->nid));
+//     }
+//   }
+// }
 
 function pro_101_custom_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'user-login') {
