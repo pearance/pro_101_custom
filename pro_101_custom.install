@@ -16,11 +16,4 @@ function pro_101_custom_install() {
   );
   $path_original = $testimonial_add_path;
   path_save($testimonial_add_path);
-
-  $feed_add_path = array(
-    'source' => "rss.xml",
-    'alias' => 'feed',
-  );
-  $path_original = $feed_add_path;
-  path_save($feed_add_path);
 }
